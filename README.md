@@ -1,4 +1,4 @@
-# ## About The Project
+## About The Project
 This is a cross platform file manager made using Avalonia
 
 ###  built with
