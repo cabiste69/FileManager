@@ -10,7 +10,7 @@ This is a cross platform file manager made using Avalonia
 
 ### Prerequisites
 
- 1. .Net Standard 2.0
+- .Net Standard 2.0
  
 ### How to run
 
