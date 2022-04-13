@@ -1,6 +1,8 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using FileManager.ViewModels;
+using FileManager.Views;
 
 namespace FileManager
 {
@@ -15,7 +17,10 @@ namespace FileManager
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                desktop.MainWindow = new MainWindow();
+                desktop.MainWindow = new MainWindow
+                {
+                    DataContext = new MainWindowViewModel(),
+                };
             }
 
             base.OnFrameworkInitializationCompleted();
