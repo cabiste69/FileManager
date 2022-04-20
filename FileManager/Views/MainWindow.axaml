@@ -8,12 +8,16 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="FileManager">
 
-    <Design.DataContext>
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
 
-	<Grid Width="400" Height="200" Name="g">
-
+	<Grid ColumnDefinitions="2*,8*" Name="g" Background="#50000000" ShowGridLines="True">
+		<Grid Grid.Column="1" RowDefinitions="2*,8*" Background="Gray" ShowGridLines="True">
+			<Button Content="this where the options will be" Grid.Row="0" Margin="16"/>
+			<Button Content="this where the files will be" Grid.Row="1" Margin="16"/>
+			
+		</Grid>
 	</Grid>
 
 </Window>
